@@ -1,0 +1,31 @@
+Ext.define('Surveyportal.surveyportal.shared.com.survey.model.healthcare.SurveyAnswerModel', {
+     "extend": "Ext.data.Model",
+     "fields": [{
+          "name": "primaryKey",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "surveyAnswerId",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "surveyAnswerName",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "surveyAnswerDesc",
+          "type": "string",
+          "defaultValue": ""
+     }, {
+          "name": "versionId",
+          "type": "int",
+          "defaultValue": ""
+     }, {
+          "name": "entityAudit",
+          "reference": "EntityAudit"
+     }, {
+          "name": "primaryDisplay",
+          "type": "string",
+          "defaultValue": ""
+     }]
+});

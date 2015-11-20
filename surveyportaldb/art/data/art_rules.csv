@@ -1,0 +1,42 @@
+28e19c0f-a19e-4fca-ace6-3596efd1b8b4#appfire#CHDRisk#appfire#<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\
+<package name="healthcontext.healthcare" xmlns="http://drools.org/drools-5.2"/>\
+#appfire#18D01ABF-F632-496A-B379-FC50EDEAB8C0#appfire#2015-11-19 11:51:21#appfire#18D01ABF-F632-496A-B379-FC50EDEAB8C0#appfire#2015-11-19 11:51:21#appfire#1#appfire#1#appfire#VQK4MRE9BRI8PHVPZ5MG#appfire#1
+ae40e084-bbf5-4f2d-a393-187a2f59bf6f#appfire#behaviouralReadlinessToChanges#appfire#<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\
+<package name="healthcontext.healthcare" xmlns="http://drools.org/drools-5.2"/>\
+#appfire#18D01ABF-F632-496A-B379-FC50EDEAB8C0#appfire#2015-11-19 11:53:10#appfire#18D01ABF-F632-496A-B379-FC50EDEAB8C0#appfire#2015-11-19 11:53:10#appfire#1#appfire#1#appfire#VQK4MRE9BRI8PHVPZ5MG#appfire#1
+d4c4cccb-0dbf-4c16-b0b9-20853a2a365a#appfire#GeneralHealth#appfire#<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\
+<package name="healthcontext.healthcare" xmlns="http://drools.org/drools-5.2"/>\
+#appfire#18D01ABF-F632-496A-B379-FC50EDEAB8C0#appfire#2015-11-19 11:49:09#appfire#18D01ABF-F632-496A-B379-FC50EDEAB8C0#appfire#2015-11-19 11:49:09#appfire#1#appfire#1#appfire#VQK4MRE9BRI8PHVPZ5MG#appfire#1
+e055c2ec-13bf-4e8d-ad3c-16f12724074a#appfire#LifestyleHabites#appfire#<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\
+<package name="healthcontext.healthcare" xmlns="http://drools.org/drools-5.2"/>\
+#appfire#18D01ABF-F632-496A-B379-FC50EDEAB8C0#appfire#2015-11-19 11:55:29#appfire#18D01ABF-F632-496A-B379-FC50EDEAB8C0#appfire#2015-11-19 11:55:29#appfire#1#appfire#1#appfire#VQK4MRE9BRI8PHVPZ5MG#appfire#1
+f58c54e1-8f6c-4db4-9ef7-e13288cd741b#appfire#SurveyResultProcessing#appfire#<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\
+<package name="healthcontext.healthcare" xmlns="http://drools.org/drools-5.2">\
+    <import name="com.survey.app.shared.healthcontext.healthcare.SurveyResultDTO"/>\
+    <import name="com.athena.framework.server.helper.RuntimeLogInfoHelper"/>\
+    <rule name="subSurvey">\
+        <rule-attribute name="no-loop" value="true"/>\
+        <lhs>\
+            <pattern identifier="surveyResult" object-type="com.survey.app.shared.healthcontext.healthcare.SurveyResultDTO">\
+                <expr>( getSurveyQuestionId() != null ) &amp;&amp; ( getSurveyAnswerId() != null )</expr>\
+            </pattern>\
+            <pattern identifier="runtimeLogInfoHelper" object-type="com.athena.framework.server.helper.RuntimeLogInfoHelper">\
+                <expr>( getRuntimeLogInfo().getUserId() != null )</expr>\
+            </pattern>\
+        </lhs>\
+        <rhs>	\
+	com.survey.app.shared.healthcare.SurveyResult	surveyresult_0	=	 new com.survey.app.shared.healthcare.SurveyResult();\
+	surveyresult_0.setContactId(java.lang.String.valueOf(runtimeLogInfoHelper.getRuntimeLogInfo().getUserId()));\
+	surveyresult_0.setSurveyAnswerId(java.lang.String.valueOf(surveyResult.getSurveyAnswerId()));\
+	surveyresult_0.setSurveyDate(new java.sql.Date(java.util.Calendar.getInstance().getTime().getTime()));\
+	surveyresult_0.setSurveyQuestionId(java.lang.String.valueOf(surveyResult.getSurveyQuestionId()));\
+	insert(surveyresult_0);\
+</rhs>\
+    </rule>\
+    <query name="retrivesurveyresult_0">\
+        <lhs>\
+            <pattern field-name="surveyresult_0" identifier="surveyresult_0" object-type="com.survey.app.shared.healthcare.SurveyResult"/>\
+        </lhs>\
+    </query>\
+</package>\
+#appfire#18D01ABF-F632-496A-B379-FC50EDEAB8C0#appfire#2015-11-19 12:56:30#appfire#18D01ABF-F632-496A-B379-FC50EDEAB8C0#appfire#2015-11-19 12:56:30#appfire#1#appfire#1#appfire#VQK4MRE9BRI8PHVPZ5MG#appfire#1

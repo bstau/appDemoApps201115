@@ -1,0 +1,2 @@
+
+GRANT ALL PRIVILEGES  ON surveydb.* TO 'surveydb'@'%' IDENTIFIED BY 'surveydb' WITH GRANT OPTION

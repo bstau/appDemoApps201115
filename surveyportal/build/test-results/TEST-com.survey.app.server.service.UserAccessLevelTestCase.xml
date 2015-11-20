@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.survey.app.server.service.UserAccessLevelTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-11-19T14:38:50" hostname="944ed2888ca3" time="0.354">
+  <properties/>
+  <testcase name="test1Save" classname="com.survey.app.server.service.UserAccessLevelTestCase" time="0.085"/>
+  <testcase name="test2Update" classname="com.survey.app.server.service.UserAccessLevelTestCase" time="0.08"/>
+  <testcase name="test3FindById" classname="com.survey.app.server.service.UserAccessLevelTestCase" time="0.011"/>
+  <testcase name="test4Delete" classname="com.survey.app.server.service.UserAccessLevelTestCase" time="0.177"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-11-19 14:38:50.548--ClientSession(721435514)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessLevel_M (userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [962DFA43-E38A-4518-9FF7-48EE8D91566B, BDMEzsxFiaqUDUBHnbB9k9ZLXYaM7UZ0PFQxId9NRUrslDcNsx, rBw4EOy1768qUH7cnNLxW8bIiQsfgq7q9wVrxjimkyoxo7dBgx, kW07S4EgSuQHBCQGSUAo5I1UbaSt8j34FMf244aEkAG5a7z47P, 8iEQjiW9MUKwDArxP77qduMoWQXjRQyLjmHhYkD2pXKZ6GtEhh, 79150, 1, AAAAA, 2015-11-19 20:08:50.543, null, 2015-11-19 20:08:50.543, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-11-19 14:38:50.625--ClientSession(167508211)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE ((activeStatus = ?) AND (userAccessLevelId = ?))
+	bind => [1, 962DFA43-E38A-4518-9FF7-48EE8D91566B]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-11-19 14:38:50.628--ClientSession(1965183178)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE (userAccessLevelId = ?)
+	bind => [962DFA43-E38A-4518-9FF7-48EE8D91566B]
+[EL Fine]: sql: 2015-11-19 14:38:50.629--ClientSession(1965183178)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--UPDATE ast_UserAccessLevel_M SET levelDescription = ?, levelHelp = ?, levelIcon = ?, levelName = ?, userAccessLevel = ?, updatedBy = ?, versionId = ? WHERE ((userAccessLevelId = ?) AND (versionId = ?))
+	bind => [DQwVCTDn1rVxu4Tl4Hzd8kvwJMT4LO9QMemNNhdPWFLZBYKcJ8, QfsIHO522SNH6SjkB8p65oyZZCPqMfNVIyYr3y3E7iOgcEtWhY, facPCAytbwXhblaSGG9RjKLlhY373CVZqLcVlTHO4xj28dXJgw, tsMN9b8Yv1ftuN00dn967HQ1miAcMWnyZPlmwIBszcZRJdp7tO, 6674, AAAAA, 2, 962DFA43-E38A-4518-9FF7-48EE8D91566B, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-11-19 14:38:50.71--ClientSession(97586931)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE ((activeStatus = ?) AND (userAccessLevelId = ?))
+	bind => [1, 962DFA43-E38A-4518-9FF7-48EE8D91566B]
+In around repository aspect
+[EL Fine]: sql: 2015-11-19 14:38:50.717--ClientSession(467475341)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE (userAccessLevelId = ?)
+	bind => [962DFA43-E38A-4518-9FF7-48EE8D91566B]
+[EL Fine]: sql: 2015-11-19 14:38:50.718--ClientSession(467475341)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessLevel_M WHERE ((userAccessLevelId = ?) AND (versionId = ?))
+	bind => [962DFA43-E38A-4518-9FF7-48EE8D91566B, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

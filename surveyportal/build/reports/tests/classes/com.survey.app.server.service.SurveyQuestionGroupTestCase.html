@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.survey.app.server.service.SurveyQuestionGroupTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.survey.app.server.service.SurveyQuestionGroupTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.survey.app.server.service.html">com.survey.app.server.service</a> &gt; SurveyQuestionGroupTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.744s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.118s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.407s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.209s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-11-19 14:38:15.575--ClientSession(900260646)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_SurveyQuestionGroup_M (surveyQuestionGroupDesc, surveyQuestionGroupName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [AZAGltIgTh84ncvYqbPwSNMq6pHlvpWTLkZd2HHDDEJo3D9E5a, NRdcVr4HUvoTMdJKnAJ3kCGBI8Sv3HRGbLO3KQboTuaB2DLFMG, 1, AAAAA, 2015-11-19 20:08:15.543, null, 2015-11-19 20:08:15.543, 1, null]
+[EL Fine]: sql: 2015-11-19 14:38:15.583--ClientSession(900260646)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--SELECT LAST_INSERT_ID()
+In around repository aspect
+[EL Fine]: sql: 2015-11-19 14:38:15.653--ClientSession(1994035907)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--SELECT surveyQuestionGroupId, surveyQuestionGroupDesc, surveyQuestionGroupName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SurveyQuestionGroup_M WHERE ((activeStatus = ?) AND (surveyQuestionGroupId = ?))
+	bind =&gt; [1, 1]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-11-19 14:38:15.657--ClientSession(977440586)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--SELECT surveyQuestionGroupId, surveyQuestionGroupDesc, surveyQuestionGroupName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SurveyQuestionGroup_M WHERE (surveyQuestionGroupId = ?)
+	bind =&gt; [1]
+[EL Fine]: sql: 2015-11-19 14:38:15.659--ClientSession(977440586)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--UPDATE ast_SurveyQuestionGroup_M SET surveyQuestionGroupDesc = ?, surveyQuestionGroupName = ?, updatedBy = ?, versionId = ? WHERE ((surveyQuestionGroupId = ?) AND (versionId = ?))
+	bind =&gt; [x8P5OYcHtJc4MnuLnmleLSz8H2HGZNdJI2v2jz8AiGOr6DHQKu, gbWptYMuB0NepGd1TEdiRrmFCYHVEuyhEFdjYvYAL3x9lNjcJg, AAAAA, 2, 1, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-11-19 14:38:16.063--ClientSession(1738803827)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--SELECT surveyQuestionGroupId, surveyQuestionGroupDesc, surveyQuestionGroupName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SurveyQuestionGroup_M WHERE ((activeStatus = ?) AND (surveyQuestionGroupId = ?))
+	bind =&gt; [1, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-11-19 14:38:16.077--ClientSession(198893388)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--SELECT surveyQuestionGroupId, surveyQuestionGroupDesc, surveyQuestionGroupName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SurveyQuestionGroup_M WHERE (surveyQuestionGroupId = ?)
+	bind =&gt; [1]
+[EL Fine]: sql: 2015-11-19 14:38:16.083--ClientSession(198893388)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_SurveyQuestionGroup_M WHERE ((surveyQuestionGroupId = ?) AND (versionId = ?))
+	bind =&gt; [1, 2]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Nov 19, 2015 2:38:53 PM</p>
+</div>
+</div>
+</body>
+</html>

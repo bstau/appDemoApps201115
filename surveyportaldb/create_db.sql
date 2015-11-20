@@ -1,0 +1,3 @@
+
+DROP DATABASE IF EXISTS `surveydb`;
+CREATE DATABASE `surveydb`;

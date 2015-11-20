@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.survey.app.server.service.SurveyAnswerTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2015-11-19T14:38:41" hostname="944ed2888ca3" time="0.334">
+  <properties/>
+  <testcase name="test1Save" classname="com.survey.app.server.service.SurveyAnswerTestCase" time="0.1"/>
+  <testcase name="test2Update" classname="com.survey.app.server.service.SurveyAnswerTestCase" time="0.075"/>
+  <testcase name="test3FindById" classname="com.survey.app.server.service.SurveyAnswerTestCase" time="0.007"/>
+  <testcase name="test4Delete" classname="com.survey.app.server.service.SurveyAnswerTestCase" time="0.149"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2015-11-19 14:38:41.849--ClientSession(1967121261)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_SurveyAnswer_M (surveyAnswerId, surveyAnswerDesc, surveyAnswerName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [296D9611-761E-43C1-8BD0-6403701F7144, MZtluPlhiYAUnFcSaTKamtjoi6RO8X5GaD48aGeZ9LO8BMlzlZ, yWvE3SFXZraU3VuhTgLaChdeyNcd9Siu9RDYS1XrJSjwaJ1faF, 1, AAAAA, 2015-11-19 20:08:41.844, null, 2015-11-19 20:08:41.844, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2015-11-19 14:38:41.936--ClientSession(1127976291)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--SELECT surveyAnswerId, surveyAnswerDesc, surveyAnswerName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SurveyAnswer_M WHERE ((activeStatus = ?) AND (surveyAnswerId = ?))
+	bind => [1, 296D9611-761E-43C1-8BD0-6403701F7144]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2015-11-19 14:38:41.939--ClientSession(2056873290)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--SELECT surveyAnswerId, surveyAnswerDesc, surveyAnswerName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SurveyAnswer_M WHERE (surveyAnswerId = ?)
+	bind => [296D9611-761E-43C1-8BD0-6403701F7144]
+[EL Fine]: sql: 2015-11-19 14:38:41.94--ClientSession(2056873290)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--UPDATE ast_SurveyAnswer_M SET surveyAnswerDesc = ?, surveyAnswerName = ?, updatedBy = ?, versionId = ? WHERE ((surveyAnswerId = ?) AND (versionId = ?))
+	bind => [tVKoy1NDRvnzsumqgc40zeJ5UYTfhr9K4QgwN3SPEIrDvKCWaL, bzU3cDspwIcSywGI7RCo1PaAX4mtGPbdlx5odfxcb5Bui3RChE, AAAAA, 2, 296D9611-761E-43C1-8BD0-6403701F7144, 1]
+In around repository aspect
+[EL Fine]: sql: 2015-11-19 14:38:42.015--ClientSession(1521343903)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--SELECT surveyAnswerId, surveyAnswerDesc, surveyAnswerName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SurveyAnswer_M WHERE ((activeStatus = ?) AND (surveyAnswerId = ?))
+	bind => [1, 296D9611-761E-43C1-8BD0-6403701F7144]
+In around repository aspect
+[EL Fine]: sql: 2015-11-19 14:38:42.023--ClientSession(1212889283)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--SELECT surveyAnswerId, surveyAnswerDesc, surveyAnswerName, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SurveyAnswer_M WHERE (surveyAnswerId = ?)
+	bind => [296D9611-761E-43C1-8BD0-6403701F7144]
+[EL Fine]: sql: 2015-11-19 14:38:42.024--ClientSession(1212889283)--Connection(1378207123)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_SurveyAnswer_M WHERE ((surveyAnswerId = ?) AND (versionId = ?))
+	bind => [296D9611-761E-43C1-8BD0-6403701F7144, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
