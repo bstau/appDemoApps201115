@@ -170,7 +170,7 @@ dependencies {
 		'commons/commons-fileupload-1.2.jar',
 		'commons/commons-codec-1.9.jar',
 		'commons/commons-httpclient-3.1.jar',
-		'commons/commons-collections-3.2.1.jar',
+		'commons/commons-collections-3.2.2.jar',
 		'commons/asm-commons-4.1.jar',
 		'eclipse/eclipselink-2.5.1.jar',
 		'eclipse/javax.persistence-2.0.0.jar',
